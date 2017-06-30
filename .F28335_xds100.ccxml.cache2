@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<configurations>
+
+  <configuration id="Texas Instruments XDS100v1 USB Emulator_0">
+    <connection class="185076" desc="Texas Instruments XDS100v1 USB Emulator_0" id="Texas Instruments XDS100v1 USB Emulator_0" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml">
+      <connectionType Type="TIXDS100" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="SEPK.POD_DRVR" Name="Emulator Filename" Type="hiddenfield" Value="jioserdesusb.dll" id="Emulator Filename" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="SEPK.POD_PORT" Name="Emulator Selection" Type="choicelist" Value="0" id="Emulator Selection" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml">
+        <choice Name="Only one XDS100 installed" value="0"/>
+        <choice Name="Select by serial number" value="0">
+          <property ID="SEPK.POD_SERIAL" Name="-- Enter the serial number" Type="stringfield" Value="Run xds100serial.exe to get serial number" id="-- Enter the serial number"/>
+        </choice>
+      </property>
+      <property ID="PRODUCT.TITLE" Name="Title" Type="hiddenfield" Value="Texas Instruments XDS100 USB" id="Title" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="PRODUCT.ALIAS" Name="Alias" Type="hiddenfield" Value="TI_XDS100v1_USB" id="Alias" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="PRODUCT.NAME" Name="Name" Type="hiddenfield" Value="FTDI_FT2232" id="Name" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="FTDI_FT2232.USB_VID" Name="USB VID" Type="hiddenfield" Value="0x0403" id="USB VID" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="FTDI_FT2232.USB_PID" Name="USB PID" Type="hiddenfield" Value="0xa6d0" id="USB PID" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="FTDI_FT2232.GPIO_L0" Name="TRST" Type="hiddenfield" Value="TRSTn,Active_Low" id="TRST" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="FTDI_FT2232.GPIO_L1" Name="EMU Pin Enable" Type="hiddenfield" Value="EMU_Pin_Enable,Active_Low" id="EMU Pin Enable" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="FTDI_FT2232.GPIO_L2" Name="EMU0" Type="hiddenfield" Value="EMU_Pin_0,Active_Low" id="EMU0" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="FTDI_FT2232.GPIO_L3" Name="EMU1" Type="hiddenfield" Value="EMU_Pin_1,Active_Low" id="EMU1" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="FTDI_FT2232.GPIO_H0" Name="SRST" Type="hiddenfield" Value="SRSTn,Active_High" id="SRST" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="FTDI_FT2232.GPIO_H1" Name="SRST In" Type="hiddenfield" Value="SRSTn_In,Active_Low" id="SRST In" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="FTDI_FT2232.GPIO_H2" Name="Power Loss Detect" Type="hiddenfield" Value="Power_Loss_Detect,Active_Low" id="Power Loss Detect" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="FTDI_FT2232.GPIO_H3" Name="Power Loss Reset" Type="hiddenfield" Value="Power_Loss_Reset,Active_High" id="Power Loss Reset" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="USCIF.TDOEDGE" Name="TMS/TDO Output Timing" Type="hiddenfield" Value="FALL" id="TMS/TDO Output Timing" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml"/>
+      <property ID="USCIF.JTAGBOOT_MODE" Name="The JTAG nTRST Boot-Mode" Type="choicelist" Value="0" id="The JTAG nTRST Boot-Mode" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml">
+        <choice Name="Disabled - Both EMU pins remain hi-z" value="disable">
+          <property ID="USCIF.JTAGBOOT_VALUE" Name="unused" Type="hiddenfield" Value="hiz" id="unused"/>
+        </choice>
+        <choice Name="Enabled - Both EMU pins are high" value="enable">
+          <property ID="USCIF.JTAGBOOT_VALUE" Name="unused" Type="hiddenfield" Value="11" id="unused"/>
+        </choice>
+        <choice Name="Enabled - EMU1 is high, EMU0 is low" value="enable">
+          <property ID="USCIF.JTAGBOOT_VALUE" Name="unused" Type="hiddenfield" Value="10" id="unused"/>
+        </choice>
+        <choice Name="Enabled - EMU1 is low, EMU0 is high" value="enable">
+          <property ID="USCIF.JTAGBOOT_VALUE" Name="unused" Type="hiddenfield" Value="01" id="unused"/>
+        </choice>
+        <choice Name="Enabled - Both EMU pins are low" value="enable">
+          <property ID="USCIF.JTAGBOOT_VALUE" Name="unused" Type="hiddenfield" Value="00" id="unused"/>
+        </choice>
+      </property>
+      <property ID="USCIF.POWERBOOT_MODE" Name="The Power-On-Reset Boot-Mode" Type="choicelist" Value="0" id="The Power-On-Reset Boot-Mode" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml">
+        <choice Name="Disabled - Both EMU pins remain hi-z" value="disable">
+          <property ID="USCIF.POWERBOOT_VALUE" Name="unused" Type="hiddenfield" Value="hiz" id="unused"/>
+        </choice>
+        <choice Name="Enabled - Both EMU pins are high" value="enable">
+          <property ID="USCIF.POWERBOOT_VALUE" Name="unused" Type="hiddenfield" Value="11" id="unused"/>
+        </choice>
+        <choice Name="Enabled - EMU1 is high, EMU0 is low" value="enable">
+          <property ID="USCIF.POWERBOOT_VALUE" Name="unused" Type="hiddenfield" Value="10" id="unused"/>
+        </choice>
+        <choice Name="Enabled - EMU1 is low, EMU0 is high" value="enable">
+          <property ID="USCIF.POWERBOOT_VALUE" Name="unused" Type="hiddenfield" Value="01" id="unused"/>
+        </choice>
+        <choice Name="Enabled - Both EMU pins are low" value="enable">
+          <property ID="USCIF.POWERBOOT_VALUE" Name="unused" Type="hiddenfield" Value="00" id="unused"/>
+        </choice>
+      </property>
+      <property ID="USCIF.TCLK_PROGRAM" Name="The JTAG TCLK Frequency (MHz)" Type="choicelist" Value="0" id="The JTAG TCLK Frequency (MHz)" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\connections\TIXDS100usb_Connection.xml">
+        <choice Name="Fixed default 1.0MHz frequency" value="SPECIFIC">
+          <property ID="USCIF.TCLK_FREQUENCY" Name="unused" Type="hiddenfield" Value="1.0" id="unused"/>
+        </choice>
+        <choice Name="Fixed with user specified faster value" value="SPECIFIC">
+          <property ID="USCIF.TCLK_FREQUENCY" Name="-- Enter a value from 1.0MHz to 6.0MHz" Type="stringfield" Value="1.0MHz" id="-- Enter a value from 1.0MHz to 6.0MHz"/>
+        </choice>
+        <choice Name="Fixed with user specified slower value" value="SPECIFIC">
+          <property ID="USCIF.TCLK_FREQUENCY" Name="-- Enter a value from 488Hz to 1.0MHz" Type="stringfield" Value="100KHz" id="-- Enter a value from 488Hz to 1.0MHz"/>
+        </choice>
+      </property>
+      <drivers id="drivers" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\drivers\tixds100c28x.xml">
+        <isa ProcID="0x5000A3F8" Type="TMS320C28XX" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\drivers\tixds100c28x.xml">
+          <driver file="C:\Program Files\Texas Instruments\ccsv4\emulation\drivers\tixds28x.dvr">
+            <property Type="hiddenfield" Value="true" id="realtimeEnabled"/>
+            <connectionType Type="TIXDS100"/>
+          </driver>
+        </isa>
+      </drivers>
+      <platform id="platform_0">
+        <device desc="TMS320F28335_0" description="" id="TMS320F28335_0" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Devices\f28335.xml" partnum="TMS320F28335">
+          <cpu desc="C28xx" description="CPU" id="C2800" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" isa="TMS320C28xx">
+            <register acronym="ACC" description="Accumulator" id="ACC" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="32">
+              <bitfield begin="31" description="Accumulator High" end="16" id="AH" range="" resetval="0" rwaccess="RW" width="16"/>
+              <bitfield begin="15" description="Accumulator Low" end="0" id="AL" range="" resetval="0" rwaccess="RW" width="16"/>
+            </register>
+            <register acronym="P" description="Product Register" id="P" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="32">
+              <bitfield begin="31" description="Product High" end="16" id="PH" range="" resetval="0" rwaccess="RW" width="16"/>
+              <bitfield begin="15" description="Product Low" end="0" id="PL" range="" resetval="0" rwaccess="RW" width="16"/>
+            </register>
+            <register acronym="XT" description="Multiplicand Register" id="XT" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="32">
+              <bitfield begin="31" description="Multiplicand High" end="16" id="T" range="" resetval="0" rwaccess="RW" width="16"/>
+              <bitfield begin="15" description="Multiplicand Low" end="0" id="TL" range="" resetval="0" rwaccess="RW" width="16"/>
+            </register>
+            <register acronym="XAR0" description="Auxiliary Register 0" id="XAR0" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="32">
+              <bitfield begin="31" description="Auxiliary Register 0 High" end="16" id="AR0H" range="" resetval="0" rwaccess="RW" width="16"/>
+              <bitfield begin="15" description="Auxiliary Register 0 Low" end="0" id="AR0" range="" resetval="0" rwaccess="RW" width="16"/>
+            </register>
+            <register acronym="XAR1" description="Auxiliary Register 1" id="XAR1" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="32">
+              <bitfield begin="31" description="Auxiliary Register 1 High" end="16" id="AR1H" range="" resetval="0" rwaccess="RW" width="16"/>
+              <bitfield begin="15" description="Auxiliary Register 1 Low" end="0" id="AR1" range="" resetval="0" rwaccess="RW" width="16"/>
+            </register>
+            <register acronym="XAR2" description="Auxiliary Register 2" id="XAR2" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="32">
+              <bitfield begin="31" description="Auxiliary Register 2 High" end="16" id="AR2H" range="" resetval="0" rwaccess="RW" width="16"/>
+              <bitfield begin="15" description="Auxiliary Register 2 Low" end="0" id="AR2" range="" resetval="0" rwaccess="RW" width="16"/>
+            </register>
+            <register acronym="XAR3" description="Auxiliary Register 3" id="XAR3" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="32">
+              <bitfield begin="31" description="Auxiliary Register 3 High" end="16" id="AR3H" range="" resetval="0" rwaccess="RW" width="16"/>
+              <bitfield begin="15" description="Auxiliary Register 3 Low" end="0" id="AR3" range="" resetval="0" rwaccess="RW" width="16"/>
+            </register>
+            <register acronym="XAR4" description="Auxiliary Register 4" id="XAR4" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="32">
+              <bitfield begin="31" description="Auxiliary Register 4 High" end="16" id="AR4H" range="" resetval="0" rwaccess="RW" width="16"/>
+              <bitfield begin="15" description="Auxiliary Register 4 Low" end="0" id="AR4" range="" resetval="0" rwaccess="RW" width="16"/>
+            </register>
+            <register acronym="XAR5" description="Auxiliary Register 5" id="XAR5" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="32">
+              <bitfield begin="31" description="Auxiliary Register 5 High" end="16" id="AR5H" range="" resetval="0" rwaccess="RW" width="16"/>
+              <bitfield begin="15" description="Auxiliary Register 5 Low" end="0" id="AR5" range="" resetval="0" rwaccess="RW" width="16"/>
+            </register>
+            <register acronym="XAR6" description="Auxiliary Register 6" id="XAR6" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="32">
+              <bitfield begin="31" description="Auxiliary Register 6 High" end="16" id="AR6H" range="" resetval="0" rwaccess="RW" width="16"/>
+              <bitfield begin="15" description="Auxiliary Register 6 Low" end="0" id="AR6" range="" resetval="0" rwaccess="RW" width="16"/>
+            </register>
+            <register acronym="XAR7" description="Auxiliary Register 7" id="XAR7" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="32">
+              <bitfield begin="31" description="Auxiliary Register 7 High" end="16" id="AR7H" range="" resetval="0" rwaccess="RW" width="16"/>
+              <bitfield begin="15" description="Auxiliary Register 7 Low" end="0" id="AR7" range="" resetval="0" rwaccess="RW" width="16"/>
+            </register>
+            <register acronym="PC" description="Program Counter" id="PC" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="24"/>
+            <register acronym="RPC" description="Return Program Counter" id="RPC" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="24"/>
+            <register acronym="ST0" description="Status Register 0" id="ST0" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="16">
+              <bitfield begin="15" description="Overflow counter" end="10" id="OVC" range="" resetval="0" rwaccess="RW" width="6"/>
+              <bitfield begin="9" description="Product shift mode bits" end="7" id="PM" range="" resetval="0" rwaccess="RW" width="3"/>
+              <bitfield begin="6" description="Overflow flag" end="6" id="V" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="5" description="Negative flag" end="5" id="N" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="4" description="Zero flag" end="4" id="Z" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="3" description="Carry bit" end="3" id="C" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="2" description="Test/Control flag" end="2" id="TC" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="1" description="Overflow mode bit" end="1" id="OVM" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="0" description="Sign-extension mode bit" end="0" id="SXM" range="" resetval="0" rwaccess="RW" width="1"/>
+            </register>
+            <register acronym="ST1" description="Status Register 1" id="ST1" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="16">
+              <bitfield begin="15" description="Auxiliary register pointer" end="13" id="ARP" range="" resetval="0" rwaccess="RW" width="3"/>
+              <bitfield begin="12" description="XF status bit" end="12" id="XF" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="11" description="M0 and M1 mapping mode bit" end="11" id="M0M1MAP" range="" resetval="1" rwaccess="RW" width="1"/>
+              <bitfield begin="10" description="Reserved " end="10" id="RESV_1" range="" resetval="0" rwaccess="N" width="1"/>
+              <bitfield begin="9" description="Object compatibility mode bit" end="9" id="OBJMODE" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="8" description="Address mode bit" end="8" id="AMODE" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="7" description="IDLE status bit" end="7" id="IDLESTAT" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="6" description="Emulation access enable bit" end="6" id="EALLOW" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="5" description="Loop instruction status bit" end="5" id="LOOP" range="" resetval="0" rwaccess="R" width="1"/>
+              <bitfield begin="4" description="Stack pointer alignment bit" end="4" id="SPA" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="3" description="Vector map bit" end="3" id="VMAP" range="" resetval="1" rwaccess="RW" width="1"/>
+              <bitfield begin="2" description="PAGE0 addressing mode configuration bit" end="2" id="PAGE0" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="1" description="Debug enable mask bit" end="1" id="DBGM" range="" resetval="1" rwaccess="RW" width="1"/>
+              <bitfield begin="0" description="Interrupt global mask bit" end="0" id="INTM" range="" resetval="1" rwaccess="RW" width="1"/>
+            </register>
+            <register acronym="DP" description="Data-Page Pointer" id="DP" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="16"/>
+            <register acronym="SP" description="Stack Pointer" id="SP" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="16"/>
+            <register acronym="IER" description="Interrupt Enable Register" id="IER" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="16">
+              <bitfield begin="15" description="Real-time operating system interrupt enable bit" end="15" id="RTOSINT" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="14" description="Data log interrupt enable bit" end="14" id="DLOGINT" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="13" description="Interrupt 14 enable bit" end="13" id="INT14" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="12" description="Interrupt 13 enable bit" end="12" id="INT13" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="11" description="Interrupt 12 enable bit" end="11" id="INT12" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="10" description="Interrupt 11 enable bit" end="10" id="INT11" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="9" description="Interrupt 10 enable bit" end="9" id="INT10" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="8" description="Interrupt 9 enable bit" end="8" id="INT9" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="7" description="Interrupt 8 enable bit" end="7" id="INT8" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="6" description="Interrupt 7 enable bit" end="6" id="INT7" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="5" description="Interrupt 6 enable bit" end="5" id="INT6" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="4" description="Interrupt 5 enable bit" end="4" id="INT5" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="3" description="Interrupt 4 enable bit" end="3" id="INT4" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="2" description="Interrupt 3 enable bit" end="2" id="INT3" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="1" description="Interrupt 2 enable bit" end="1" id="INT2" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="0" description="Interrupt 1 enable bit" end="0" id="INT1" range="" resetval="0" rwaccess="RW" width="1"/>
+            </register>
+            <register acronym="IFR" description="Interrupt Flag Register" id="IFR" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="16">
+              <bitfield begin="15" description="Real-time operating system flag" end="15" id="RTOSINT" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="14" description="Data log interrupt flag" end="14" id="DLOGINT" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="13" description="Interrupt 14 flag" end="13" id="INT14" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="12" description="Interrupt 13 flag" end="12" id="INT13" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="11" description="Interrupt 12 flag" end="11" id="INT12" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="10" description="Interrupt 11 flag" end="10" id="INT11" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="9" description="Interrupt 10 flag" end="9" id="INT10" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="8" description="Interrupt 9 flag" end="8" id="INT9" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="7" description="Interrupt 8 flag" end="7" id="INT8" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="6" description="Interrupt 7 flag" end="6" id="INT7" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="5" description="Interrupt 6 flag" end="5" id="INT6" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="4" description="Interrupt 5 flag" end="4" id="INT5" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="3" description="Interrupt 4 flag" end="3" id="INT4" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="2" description="Interrupt 3 flag" end="2" id="INT3" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="1" description="Interrupt 2 flag" end="1" id="INT2" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="0" description="Interrupt 1 flag" end="0" id="INT1" range="" resetval="0" rwaccess="RW" width="1"/>
+            </register>
+            <register acronym="DBGIER" description="Debug Interrupt Enable Register" id="DBGIER" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\cpus\c28xx.xml" width="16">
+              <bitfield begin="15" description="Real-time operating system debug enable bit" end="15" id="RTOSINT" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="14" description="Data log debug enable bit" end="14" id="DLOGINT" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="13" description="Interrupt 14 debug enable bit" end="13" id="INT14" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="12" description="Interrupt 13 debug enable bit" end="12" id="INT13" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="11" description="Interrupt 12 debug enable bit" end="11" id="INT12" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="10" description="Interrupt 11 debug enable bit" end="10" id="INT11" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="9" description="Interrupt 10 debug enable bit" end="9" id="INT10" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="8" description="Interrupt 9 debug enable bit" end="8" id="INT9" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="7" description="Interrupt 8 debug enable bit" end="7" id="INT8" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="6" description="Interrupt 7 debug enable bit" end="6" id="INT7" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="5" description="Interrupt 6 debug enable bit" end="5" id="INT6" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="4" description="Interrupt 5 debug enable bit" end="4" id="INT5" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="3" description="Interrupt 4 debug enable bit" end="3" id="INT4" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="2" description="Interrupt 3 debug enable bit" end="2" id="INT3" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="1" description="Interrupt 2 debug enable bit" end="1" id="INT2" range="" resetval="0" rwaccess="RW" width="1"/>
+              <bitfield begin="0" description="Interrupt 1 debug enable bit" end="0" id="INT1" range="" resetval="0" rwaccess="RW" width="1"/>
+            </register>
+            <module accessnumbytes="4" baseaddr="0" description="" hidden="true" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C28xNotVisible.xml" permissions="p" requestor="TMS320C28XX" size="00"/>
+            <property Type="filepathfield" Value="C:\Program Files\Texas Instruments\ccsv4\emulation\gel\f28335.gel" id="GEL File"/>
+            <property Type="stringfield" Value="--large_memory_model --silicon_version=28 --float_support=fpu32" id="CompilerBuildOptions"/>
+            <property Type="stringfield" Value="28335_RAM_lnk.cmd" id="LinkerCmd"/>
+            <property Type="stringfield" Value="rts2800_fpu32.lib" id="RTSlib"/>
+            <module accessnumbytes="4" baseaddr="0x000F00" description="FPU Registers" endaddr="0x000F2E" id="FPU" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_FPU32_Registers.xml" permissions="p" requestor="" size="0x002F"/>
+            <module accessnumbytes="4" baseaddr="0x007100" description="ADC Registers" endaddr="0x00711D" id="ADC" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ADC_Type2_Registers.xml" permissions="p" requestor="" size="0x001E"/>
+            <module accessnumbytes="4" baseaddr="0x000B00" description="ADC Mirror Registers" endaddr="0x000B0F" id="ADCMIRROR" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ADC_Type2_Mirror_Registers.xml" permissions="p" requestor="" size="0x000F"/>
+            <module accessnumbytes="4" baseaddr="0x007010" description="System Control Registers" endaddr="0x00702E" id="SYSCTRL" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\28x3x_System_Control_Registers.xml" permissions="p" requestor="" size="0x001F"/>
+            <module accessnumbytes="4" baseaddr="0x000AE0" description="Code Security Module" endaddr="0x000AEF" id="CSM" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_Code_Security_Module_Registers.xml" permissions="p" requestor="" size="0x0010"/>
+            <module accessnumbytes="4" baseaddr="0x33FFF8" description="PWL Locations" endaddr="0x33FFFF" id="PWL" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_PWL_Registers.xml" permissions="p" requestor="" size="0x0008"/>
+            <module accessnumbytes="4" baseaddr="0x000C00" description="CPU Timer Registers" endaddr="0x000C17" id="CPUTIMER" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_CPU_Timer_Registers.xml" permissions="p" requestor="" size="0x0018"/>
+            <module accessnumbytes="4" baseaddr="0x000880" description="Device Emulation Registers" endaddr="0x380090" id="DEVEMU" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\28x3x_Device_Emulation_Registers.xml" permissions="p" requestor="" size="0x37F811"/>
+            <module accessnumbytes="4" baseaddr="0x001000" description="DMA Registers" endaddr="0x0010DF" id="DMA" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_DMA_Type0_Registers.xml" permissions="p" requestor="" size="0x00E0"/>
+            <module accessnumbytes="4" baseaddr="0x006000" description="eCAN-A  Registers" endaddr="0x006032" id="eCANA" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAN_A_Type0_Registers.xml" permissions="p" requestor="" size="0x0033"/>
+            <module accessnumbytes="4" baseaddr="0x006040" description="eCAN-A Local Acceptance Masks" endaddr="0x00607F" id="eCANA_LAM" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAN_A_Type0_Local_Acceptance_Masks.xml" permissions="p" requestor="" size="0x0040"/>
+            <module accessnumbytes="4" baseaddr="0x006080" description="eCAN-A Message Object Time Stamps" endaddr="0x0060BF" id="eCANA_MOTS" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAN_A_Type0_Message_Object_Time_Stamps.xml" permissions="p" requestor="" size="0x0040"/>
+            <module accessnumbytes="4" baseaddr="0x0060C0" description="eCAN-A Message Object Time-Outs" endaddr="0x0060FF" id="eCANA_MOTO" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAN_A_Type0_Message_Object_TimeOut.xml" permissions="p" requestor="" size="0x0040"/>
+            <module accessnumbytes="4" baseaddr="0x006100" description="eCAN-A Mailbox Content" endaddr="0x0061FF" id="eCANA_MBX_CONTENT" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAN_A_Type0_Mailbox_Registers.xml" permissions="p" requestor="" size="0x0200"/>
+            <module accessnumbytes="4" baseaddr="0x006200" description="eCAN-B Control and Status Registers" endaddr="0x006232" id="eCANB" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAN_B_Type0_Registers.xml" permissions="p" requestor="" size="0x0033"/>
+            <module accessnumbytes="4" baseaddr="0x006240" description="eCAN-B Local Acceptance Masks" endaddr="0x00627F" id="eCANB_LAM" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAN_B_Type0_Local_Acceptance_Masks.xml" permissions="p" requestor="" size="0x0040"/>
+            <module accessnumbytes="4" baseaddr="0x006280" description="eCAN-B Message Object Time Stamps" endaddr="0x0062BF" id="eCANB_MOTS" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAN_B_Type0_Message_Object_Time_Stamps.xml" permissions="p" requestor="" size="0x0040"/>
+            <module accessnumbytes="4" baseaddr="0x0062C0" description="eCAN-B Message Object Time-Outs" endaddr="0x0062FF" id="eCANB_MOTO" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAN_B_Type0_Message_Object_TimeOut.xml" permissions="p" requestor="" size="0x0040"/>
+            <module accessnumbytes="4" baseaddr="0x006300" description="eCAN-B Mailbox Content" endaddr="0x0063FF" id="eCANB_MBX_CONTENT" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAN_B_Type0_Mailbox_Registers.xml" permissions="p" requestor="" size="0x0200"/>
+            <module accessnumbytes="4" baseaddr="0x006A00" description="eCAP1 Registers" endaddr="0x006A19" id="eCAP1" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAP1_Type0_Registers.xml" permissions="p" requestor="" size="0x001A"/>
+            <module accessnumbytes="4" baseaddr="0x006A20" description="eCAP2 Registers" endaddr="0x006A39" id="eCAP2" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAP2_Type0_Registers.xml" permissions="p" requestor="" size="0x001A"/>
+            <module accessnumbytes="4" baseaddr="0x006A40" description="eCAP3 Registers" endaddr="0x006A59" id="eCAP3" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAP3_Type0_Registers.xml" permissions="p" requestor="" size="0x001A"/>
+            <module accessnumbytes="4" baseaddr="0x006A60" description="eCAP4 Registers" endaddr="0x006A79" id="eCAP4" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAP4_Type0_Registers.xml" permissions="p" requestor="" size="0x001A"/>
+            <module accessnumbytes="4" baseaddr="0x006A80" description="eCAP5 Registers" endaddr="0x006A99" id="eCAP5" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAP5_Type0_Registers.xml" permissions="p" requestor="" size="0x001A"/>
+            <module accessnumbytes="4" baseaddr="0x006AA0" description="eCAP6 Registers" endaddr="0x006AB9" id="eCAP6" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eCAP6_Type0_Registers.xml" permissions="p" requestor="" size="0x001A"/>
+            <module accessnumbytes="4" baseaddr="0x006800" description="ePWM1 Registers" endaddr="0x006820" id="ePWM1" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM1_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x006840" description="ePWM2 Registers" endaddr="0x006860" id="ePWM2" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM2_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x006880" description="ePWM3 Registers" endaddr="0x0068A0" id="ePWM3" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM3_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x0068C0" description="ePWM4 Registers" endaddr="0x0068E0" id="ePWM4" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM4_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x006900" description="ePWM5 Registers" endaddr="0x006920" id="ePWM5" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM5_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x006940" description="ePWM6 Registers" endaddr="0x006960" id="ePWM6" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM6_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x005800" description="ePWM1 Mirror Registers" endaddr="0x005820" id="ePWM1_Mirror" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM1_Mirror_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x005840" description="ePWM2 Mirror Registers" endaddr="0x005860" id="ePWM2_Mirror" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM2_Mirror_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x005880" description="ePWM3 Mirror Registers" endaddr="0x0058A0" id="ePWM3_Mirror" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM3_Mirror_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x0058C0" description="ePWM4 Mirror Registers" endaddr="0x0058E0" id="ePWM4_Mirror" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM4_Mirror_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x005900" description="ePWM5 Mirror Registers" endaddr="0x005920" id="ePWM5_Mirror" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM5_Mirror_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x005940" description="ePWM6 Mirror Registers" endaddr="0x005960" id="ePWM6_Mirror" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_ePWM6_Mirror_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x006B00" description="eQEP1 Registers" endaddr="0x006B20" id="eQEP1" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eQEP1_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x006B40" description="eQEP2 Registers" endaddr="0x006B60" id="eQEP2" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_eQEP2_Type0_Registers.xml" permissions="p" requestor="" size="0x0021"/>
+            <module accessnumbytes="4" baseaddr="0x000A80" description="Flash/OTP Registers" endaddr="0x000A87" id="FLASH" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_Flash_Type0_Registers.xml" permissions="p" requestor="" size="0x008"/>
+            <module accessnumbytes="4" baseaddr="0x000B20" description="External Interface Registers" endaddr="0x000B3D" id="XINTF" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_External_Interface_Type1_Registers.xml" permissions="p" requestor="" size="0x001E"/>
+            <module accessnumbytes="4" baseaddr="0x007070" description="External Interrupt Registers" endaddr="0x00707F" id="XINT" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\28x3x_External_Interrupt_Registers.xml" permissions="p" requestor="" size="0x0010"/>
+            <module accessnumbytes="4" baseaddr="0x006F80" description="GPIO Registers" endaddr="0x006FE9" id="GPIO" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\28x3x_GPIO_Registers.xml" permissions="p" requestor="" size="0x0070"/>
+            <module accessnumbytes="4" baseaddr="0x005000" description="Multi-Channel Buffered Serial Port A Registers" endaddr="0x005023" id="McBSPA" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_McBSPA_Type1_Registers.xml" permissions="p" requestor="" size="0x0024"/>
+            <module accessnumbytes="4" baseaddr="0x005040" description="Multi-Channel Buffered Serial Port B Registers" endaddr="0x005063" id="McBSPB" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_McBSPB_Type1_Registers.xml" permissions="p" requestor="" size="0x0024"/>
+            <module accessnumbytes="4" baseaddr="0x007900" description="I2CA Registers" endaddr="0x007921" id="I2CA" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_I2C_A_Type0_Registers.xml" permissions="p" requestor="" size="0x0022"/>
+            <module accessnumbytes="4" baseaddr="0x000CE0" description="Peripheral Interrupt Expansion Registers" endaddr="0x000CF9" id="PIE" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_PIE_Registers.xml" permissions="p" requestor="" size="0x001A"/>
+            <module accessnumbytes="4" baseaddr="0x007050" description="Serial Communication Interface A Registers" endaddr="0x00705F" id="SCIA" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_SCI_A_Type0_Registers.xml" permissions="p" requestor="" size="0x0010"/>
+            <module accessnumbytes="4" baseaddr="0x007750" description="Serial Communication Interface B Registers" endaddr="0x00775F" id="SCIB" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_SCI_B_Type0_Registers.xml" permissions="p" requestor="" size="0x0010"/>
+            <module accessnumbytes="4" baseaddr="0x007770" description="Serial Communication Interface C Registers" endaddr="0x00777F" id="SCIC" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_SCI_C_Type0_Registers.xml" permissions="p" requestor="" size="0x0010"/>
+            <module accessnumbytes="4" baseaddr="0x007040" description="Serial Peripheral Interface A Registers" endaddr="0x00704F" id="SPIA" instanceFile="C:\Program Files\Texas Instruments\ccsv4\common\targetdb\Modules\C2000\C2000_SPI_A_Type0_Registers.xml" permissions="p" requestor="" size="0x0010"/>
+          </cpu>
+        </device>
+      </platform>
+    </connection>
+  </configuration>
+
+</configurations>

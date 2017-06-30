@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="HVPM_Sensorless.com.ti.ccstudio.buildDefinitions.C2000.ProjectType.284140919" name="C2000" projectType="com.ti.ccstudio.buildDefinitions.C2000.ProjectType">
+<configuration artifactExtension="out" artifactName="HVPM_Sensorless" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363" name="F2803x_RAM" parent="com.ti.ccstudio.buildDefinitions.C2000.Default">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.DebugToolchain.206832031" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.577834573" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=none"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.4"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="IS_ELF=false"/>
+<listOptionValue builtIn="false" value="PROJECT_KIND=com.ti.ccstudio.managedbuild.core.ProjectKind_Executable"/>
+<listOptionValue builtIn="false" value="RTSC_PRODUCTS=com.ti.rtsc.XDAIS:latest;"/>
+<listOptionValue builtIn="false" value="IS_ASSEMBLY_ONLY=false"/>
+<listOptionValue builtIn="false" value="LINK_ORDER=DSP2803x_Headers_nonBIOS.cmd;IQmath.lib;"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.2101958271" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.0.1" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING.681043625" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.1556250007" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DEFINE.629634101" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="&quot;_DEBUG&quot;"/>
+<listOptionValue builtIn="false" value="&quot;LARGE_MODEL&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH.1143106859" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}/device_support/f2803x/v122/DSP2803x_headers/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}/device_support/f2803x/v122/DSP2803x_common/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}/libs/math/IQmath/v15c/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}/development_kits/~SupportFiles/F2803x_headers&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}/libs/app_libs/motor_control/math_blocks/v4.0&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}/libs/app_libs/motor_control/drivers/f2803x_v2.0&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.QUIET_LEVEL.968893313" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.QUIET_LEVEL" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.QUIET_LEVEL.QUIET" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL.1943831971" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIRECTORY_MODE.759042494" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIRECTORY_MODE" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIRECTORY_MODE.manual" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.OUTPUT_FILE.491325068" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.OUTPUT_FILE" value="&quot;HVPM_Sensorless.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.MAP_FILE.1147020254" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.MAP_FILE" value="&quot;HVPM_Sensorless.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.STACK_SIZE.1575466650" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.STACK_SIZE" value="0x380" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.generatedLinkerCommandFiles.306786944" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.generatedLinkerCommandFiles" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;$(GEN_CMDS_QUOTED)&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.LIBRARY.960721173" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;rts2800_ml.lib&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.SEARCH_PATH.137047812" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}&quot;"/>
+</option>
+</tool>
+<macros/>
+</toolChain>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363./HVPM_Sensorless_2833x/DSP2833x_usDelay.asm" name="DSP2833x_usDelay.asm" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/DSP2833x_usDelay.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747./HVPM_Sensorless_2833x/DSP2833x_usDelay.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747./HVPM_Sensorless_2833x/DSP2833x_usDelay.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363./HVPM_Sensorless_2833x/F28035_FLASH_HVPM_Sensorless.CMD" name="F28035_FLASH_HVPM_Sensorless.CMD" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/F28035_FLASH_HVPM_Sensorless.CMD" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/F28035_FLASH_HVPM_Sensorless.CMD">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/F28035_FLASH_HVPM_Sensorless.CMD" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363./HVPM_Sensorless_2833x/F28335_FLASH_HVPM_Sensorless.cmd" name="F28335_FLASH_HVPM_Sensorless.cmd" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/F28335_FLASH_HVPM_Sensorless.cmd" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/F28335_FLASH_HVPM_Sensorless.cmd">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/F28335_FLASH_HVPM_Sensorless.cmd" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363./HVPM_Sensorless_2833x/F28335_RAM_HVPM_Sensorless.CMD" name="F28335_RAM_HVPM_Sensorless.CMD" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/F28335_RAM_HVPM_Sensorless.CMD" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/F28335_RAM_HVPM_Sensorless.CMD">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/F28335_RAM_HVPM_Sensorless.CMD" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363./HVPM_Sensorless_2833x/HVPM_Sensorless-DevInit_F2833x.c" name="HVPM_Sensorless-DevInit_F2833x.c" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/HVPM_Sensorless-DevInit_F2833x.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747./HVPM_Sensorless_2833x/HVPM_Sensorless-DevInit_F2833x.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747./HVPM_Sensorless_2833x/HVPM_Sensorless-DevInit_F2833x.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363./HVPM_Sensorless_2833x/DSP2833x_ADC_cal.asm" name="DSP2833x_ADC_cal.asm" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/DSP2833x_ADC_cal.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747./HVPM_Sensorless_2833x/DSP2833x_ADC_cal.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747./HVPM_Sensorless_2833x/DSP2833x_ADC_cal.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363./HVPM_Sensorless_2833x/DSP2833x_CodeStartBranch.asm" name="DSP2833x_CodeStartBranch.asm" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/DSP2833x_CodeStartBranch.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747./HVPM_Sensorless_2833x/DSP2833x_CodeStartBranch.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747./HVPM_Sensorless_2833x/DSP2833x_CodeStartBranch.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363./HVPM_Sensorless_2833x/DSP2833x_GlobalVariableDefs.c" name="DSP2833x_GlobalVariableDefs.c" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/DSP2833x_GlobalVariableDefs.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747./HVPM_Sensorless_2833x/DSP2833x_GlobalVariableDefs.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747./HVPM_Sensorless_2833x/DSP2833x_GlobalVariableDefs.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.707483747"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363./HVPM_Sensorless_2833x/DSP2833x_Headers_nonBIOS.cmd" name="DSP2833x_Headers_nonBIOS.cmd" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/DSP2833x_Headers_nonBIOS.cmd" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/DSP2833x_Headers_nonBIOS.cmd">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/DSP2833x_Headers_nonBIOS.cmd" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363./HVPM_Sensorless_2833x/rts2800_fpu32_fast_supplement.lib" name="rts2800_fpu32_fast_supplement.lib" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/rts2800_fpu32_fast_supplement.lib" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/rts2800_fpu32_fast_supplement.lib">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/rts2800_fpu32_fast_supplement.lib" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1573011363./HVPM_Sensorless_2833x/IQmath_fpu32.lib" name="IQmath_fpu32.lib" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/IQmath_fpu32.lib" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/IQmath_fpu32.lib">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351./HVPM_Sensorless_2833x/IQmath_fpu32.lib" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.2063711351"/>
+</resourceConfiguration>
+</configuration>
+<configuration artifactExtension="out" artifactName="HVPM_Sensorless_2833x" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1099738443" name="F2833x_RAM" parent="com.ti.ccstudio.buildDefinitions.C2000.Default">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.DebugToolchain.337162056" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.638903871" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F28335"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.4"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=rts2800_fpu32.lib"/>
+<listOptionValue builtIn="false" value="IS_ELF=false"/>
+<listOptionValue builtIn="false" value="PROJECT_KIND=com.ti.ccstudio.managedbuild.core.ProjectKind_Executable"/>
+<listOptionValue builtIn="false" value="IS_ASSEMBLY_ONLY=false"/>
+<listOptionValue builtIn="false" value="LINK_ORDER=rts2800_fpu32_fast_supplement.lib;-l&quot;rts2800_fpu32.lib&quot;;IQmath_fpu32.lib;"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1380381224" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.0.1" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING.282186343" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL.1370758782" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.UNIFIED_MEMORY.22755886" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.1817631593" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT.1075563206" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT.fpu32" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DEFINE.1911604263" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="&quot;_DEBUG&quot;"/>
+<listOptionValue builtIn="false" value="&quot;LARGE_MODEL&quot;"/>
+<listOptionValue builtIn="false" value="&quot;FLOATING_MATH&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH.1773855764" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}\device_support\f2833x\v132\DSP2833x_headers\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}\device_support\f2833x\v132\DSP2833x_common\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}/libs/math/IQmath/v15c/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}/development_kits/~SupportFiles/F2833x_headers&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}/libs/app_libs/motor_control/math_blocks/v4.0&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CONTROLSUITE_HVMOTOR_ROOT}/libs/app_libs/motor_control/drivers/f2833x_v2.0&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.QUIET_LEVEL.2108369259" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.QUIET_LEVEL" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.QUIET_LEVEL.QUIET" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIRECTORY_MODE.462060695" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIRECTORY_MODE" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIRECTORY_MODE.manual" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.STACK_SIZE.1168540290" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.STACK_SIZE" value="0x380" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.OUTPUT_FILE.2014497539" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.OUTPUT_FILE" value="&quot;HVPM_Sensorless_2833x.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.MAP_FILE.935269520" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.MAP_FILE" value="&quot;HVPM_Sensorless_2833x.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.generatedLinkerCommandFiles.391345781" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.generatedLinkerCommandFiles" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;$(GEN_CMDS_QUOTED)&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.SEARCH_PATH.13965559" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.LIBRARY.1944536382" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;rts2800_fpu32.lib&quot;"/>
+</option>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1099738443./HVPM_Sensorless_2833x/DSP2803x_usDelay.asm" name="DSP2803x_usDelay.asm" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/DSP2803x_usDelay.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142./HVPM_Sensorless_2833x/DSP2803x_usDelay.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142./HVPM_Sensorless_2833x/DSP2803x_usDelay.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1099738443./HVPM_Sensorless_2833x/F28035_FLASH_HVPM_Sensorless.CMD" name="F28035_FLASH_HVPM_Sensorless.CMD" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/F28035_FLASH_HVPM_Sensorless.CMD" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242./HVPM_Sensorless_2833x/F28035_FLASH_HVPM_Sensorless.CMD">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242./HVPM_Sensorless_2833x/F28035_FLASH_HVPM_Sensorless.CMD" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1099738443./HVPM_Sensorless_2833x/F28035_RAM_HVPM_Sensorless.CMD" name="F28035_RAM_HVPM_Sensorless.CMD" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/F28035_RAM_HVPM_Sensorless.CMD" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242./HVPM_Sensorless_2833x/F28035_RAM_HVPM_Sensorless.CMD">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242./HVPM_Sensorless_2833x/F28035_RAM_HVPM_Sensorless.CMD" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1099738443./HVPM_Sensorless_2833x/F28335_FLASH_HVPM_Sensorless.cmd" name="F28335_FLASH_HVPM_Sensorless.cmd" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/F28335_FLASH_HVPM_Sensorless.cmd" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242./HVPM_Sensorless_2833x/F28335_FLASH_HVPM_Sensorless.cmd">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242./HVPM_Sensorless_2833x/F28335_FLASH_HVPM_Sensorless.cmd" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1099738443./HVPM_Sensorless_2833x/HVPM_Sensorless-DevInit_F2803x.c" name="HVPM_Sensorless-DevInit_F2803x.c" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/HVPM_Sensorless-DevInit_F2803x.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142./HVPM_Sensorless_2833x/HVPM_Sensorless-DevInit_F2803x.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142./HVPM_Sensorless_2833x/HVPM_Sensorless-DevInit_F2803x.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1099738443./HVPM_Sensorless_2833x/HVPM_Sensorless.c" name="HVPM_Sensorless.c" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/HVPM_Sensorless.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142./HVPM_Sensorless_2833x/HVPM_Sensorless.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142./HVPM_Sensorless_2833x/HVPM_Sensorless.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1099738443./HVPM_Sensorless_2833x/DSP2803x_CodeStartBranch.asm" name="DSP2803x_CodeStartBranch.asm" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/DSP2803x_CodeStartBranch.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142./HVPM_Sensorless_2833x/DSP2803x_CodeStartBranch.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142./HVPM_Sensorless_2833x/DSP2803x_CodeStartBranch.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1099738443./HVPM_Sensorless_2833x/DSP2803x_GlobalVariableDefs.c" name="DSP2803x_GlobalVariableDefs.c" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/DSP2803x_GlobalVariableDefs.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142./HVPM_Sensorless_2833x/DSP2803x_GlobalVariableDefs.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142./HVPM_Sensorless_2833x/DSP2803x_GlobalVariableDefs.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.840340142"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1099738443./HVPM_Sensorless_2833x/DSP2803x_Headers_nonBIOS.cmd" name="DSP2803x_Headers_nonBIOS.cmd" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/DSP2803x_Headers_nonBIOS.cmd" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242./HVPM_Sensorless_2833x/DSP2803x_Headers_nonBIOS.cmd">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242./HVPM_Sensorless_2833x/DSP2803x_Headers_nonBIOS.cmd" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Default.1099738443./HVPM_Sensorless_2833x/IQmath.lib" name="IQmath.lib" rcbsApplicability="disable" resourcePath="/HVPM_Sensorless_2833x/IQmath.lib" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242./HVPM_Sensorless_2833x/IQmath.lib">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242./HVPM_Sensorless_2833x/IQmath.lib" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1833617242"/>
+</resourceConfiguration>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>
